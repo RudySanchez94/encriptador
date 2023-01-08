@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!--Link para hacer conexion con el archivo de css-->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>EncriptoWeb</title>
+</head>
+<body>
+    <header>
+        <!--Titulo de la pagina web la cual sera animada-->
+        <h1 class="titulo">EncriptoWeb</h1>
+    </header>
+    
+    <main>
+        <!--agregaremos nuestra primer textarea en donde se pedira el texto ya sea de forma plana o encriptada-->
+        <div class="textarea-texto">
+            <textarea name="texto" id="texto" cols="30" rows="10" placeholder="Ingrese su texto" ></textarea>
+        </div>
+        <!--agregamos el div que contendra los botones de encriptar y desencriptar-->
+        <div class="caja-botones">
+            <input class="btn-style" type="button" value="encriptar" onclick="encriptar()">
+            <input class="btn-style" type="button" value="desencriptar" onclick="desencriptar()">
+        </div>
+        <!--agregamos el div que contendra el textarea del resultado-->
+        <div class="textarea-resultado">
+            <textarea name="resultado" id="resultado" cols="30" rows="10"></textarea>
+        </div>
+        <div class="dibujo">
+            <img id="dibujo" src="https://raw.githubusercontent.com/RudySanchez94/imagenes/ca354316b343415be689257e90c6a6ce0349d6e0/Mu%C3%B1eco.svg" alt="imagen1">
+        </div>
+        <!--div que contendra el boton de coapiar, sera oculto y aparecera con la activacion de uno de los botones encriptar o desencriptar-->
+        <div class="caja-botones-copiar">
+            <input class="btn-style" id="btn-copiar" type="button" value="copiar" onclick="copiarTexto()">
+        </div>
+    </main>
+    <!--pie de pagina en donde contendra datos personales-->
+    <footer class="footer-style">
+        <!--contenedor de mis redes sociales-->
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/rudy-s%C3%A1nchez/"><img src="https://raw.githubusercontent.com/RudySanchez94/imagenes/ca354316b343415be689257e90c6a6ce0349d6e0/linkedin.svg" alt="logo-linkedin"></a>
+        </div>
+        <!--texto complementario de las redes sociales y propuesta de proyecto-->
+        <p>Primer proyecto propuesto por Alura. <br>Diseñado y desarrollado por Rudy Sanchez. <br>Proyecto sera la inicializacion de portafolio.</p>
+    </footer>
+
+    <script src="/logic.js"></script>
+</body>
+</html>
